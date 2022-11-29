@@ -1,16 +1,14 @@
 import React from 'react';
-import logo from './logo.png';
+import logo from './logo.svg';
 import './App.css';
 import Footer from './Component/Footer';
+import ResponsiveAppBar from './Component/ResponsiveAppBar';
+import HomePage from './Pages/HomePage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Carsex po</h1>
-        <Footer name="Victor Emmanuel F. Garcia" course="BSCS" section="F1"/>
-      </header>
+        <HomePage/>
     </div>
   );
 }

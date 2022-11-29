@@ -9,10 +9,10 @@ type FooterProps = {
 const Footer = ({ name, course, section }: FooterProps) => {
   return ( 
     <Box sx={{ padding: "32px 0" }}>
-      <Typography variant="body2" color="white" align="center">
+      <Typography variant="body2" color="black" align="center">
         {name} {course} {section} - CSIT321
       </Typography>
-      <Typography variant="body2" color="white" align="center">
+      <Typography variant="body2" color="black" align="center">
         Copyright © SakayTa {new Date().getFullYear()}
       </Typography>
     </Box>
