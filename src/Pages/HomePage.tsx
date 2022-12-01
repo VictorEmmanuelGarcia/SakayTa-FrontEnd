@@ -1,8 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import '../App.css';
-import Footer from '../Component/Footer';
-import ResponsiveAppBar from '../Component/ResponsiveAppBar';
+import Footer from '../components/garcia/garciaFooter';
+import ResponsiveAppBar from '../components/ResponsiveAppBar';
 
 function HomeApp() {
   return (
