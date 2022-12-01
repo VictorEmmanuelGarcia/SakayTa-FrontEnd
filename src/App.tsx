@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Footer from './components/garcia/garciaFooter';
 import ResponsiveAppBar from './components/ResponsiveAppBar';
-import HomePage from './pages/HomePage';
+import HomePage from './Pages/HomePage';
 
 function App() {
   return (
