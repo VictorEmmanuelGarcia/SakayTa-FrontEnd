@@ -170,6 +170,7 @@ function ResponsiveAppBar() {
               <Typography textAlign="center">
                 <MenuItem>
                   <Link
+                    style={{textDecoration:'none', color:'black'}}
                     key={item.text}
                     to={item.to}>
                     {item.name}
