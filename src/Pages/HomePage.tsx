@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import '../App.css';
+import {useNavigate} from 'react-router-dom';
 import Footer from '../components/garcia/garciaFooter';
 import ResponsiveAppBar from '../components/ResponsiveAppBar';
 import { Stack } from '@mui/system';
