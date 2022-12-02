@@ -7,6 +7,7 @@ import HomePage from './Pages/HomePage';
 import Profile from './Pages/Profile';
 import ErrorPage from './Pages/ErrorPage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Settings from './Pages/Settings';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/profile" element={<Profile/>}/>
+        <Route path="/settings" element={<Settings/>}/>
         <Route path="*" element={<ErrorPage/>}/>
       </Routes>
     </Router>
