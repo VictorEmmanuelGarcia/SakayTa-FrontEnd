@@ -8,6 +8,10 @@
   pointer-events: none;
 }
 
+.Bus-input {
+  align-items: center;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 1s linear;
