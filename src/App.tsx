@@ -6,6 +6,7 @@ import Footer from './components/garcia/garciaFooter';
 import ResponsiveAppBar from './components/ResponsiveAppBar';
 import HomePage from './Pages/HomePage';
 import Profile from './Pages/Profile';
+import ErrorPage from './Pages/ErrorPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/profile" element={<Profile/>}/>
+        <Route path="*" element={<ErrorPage/>}/>
       </Routes>
     </Router>
   );
