@@ -10,6 +10,9 @@ function Settings(){
     return (
         <div className="Settings">
         <ResponsiveAppBar/>
+        <div style={{display:'flex', justifyContent:'center', alignItems:'right'}}>
+            <h1>Victor Garcia</h1>
+        </div>
         <Sidebar/>
             <div className="Settings-bar">
                 <Stack direction="column" spacing={2}>

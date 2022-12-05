@@ -8,12 +8,14 @@ import Profile from './Pages/Profile';
 import ErrorPage from './Pages/ErrorPage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Settings from './Pages/Settings';
+import LandingPage from './Pages/LandingPage';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<HomePage/>}/>
+      <Route path="/" element={<LandingPage/>}/>
+        <Route path="/home" element={<HomePage/>}/>
         <Route path="/profile" element={<Profile/>}/>
         <Route path="/settings" element={<Settings/>}/>
         <Route path="*" element={<ErrorPage/>}/>
