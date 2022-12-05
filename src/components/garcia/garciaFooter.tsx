@@ -8,7 +8,7 @@ type FooterProps = {
 
 const Footer = ({ name, course, section }: FooterProps) => {
   return ( 
-    <Box sx={{ padding: "32px 0" }}>
+    <Box sx={{ padding: "90px 0" }}>
       <Typography variant="body2" color="black" align="center">
         {name} {course} {section} - CSIT321
       </Typography>

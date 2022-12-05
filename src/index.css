@@ -33,3 +33,22 @@ h1{
   height: 100vh;
   padding-top: 100px;
 }
+
+.name_label{
+  align-items: center;
+  justify-content: start;
+  margin-top: -7cm;
+}
+
+.name_card2{
+  margin-left: 30rem;
+  margin-right: 15rem;
+  background-color: #F79110;
+  border: 1px;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: left; 
+  font-family: Helvetica;
+  font-size: 30;
+
+}

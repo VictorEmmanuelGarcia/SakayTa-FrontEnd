@@ -5,24 +5,23 @@ import ResponsiveAppBar from '../components/ResponsiveAppBar';
 import Sidebar from '../components/sidebar';
 import { Stack, TextField, Button } from '@mui/material';
 import Footer from '../components/garcia/garciaFooter';
+import Namebar from '../components/enriquez/namebar';
 
 function Settings(){
     return (
         <div className="Settings">
         <ResponsiveAppBar/>
-        <div style={{display:'flex', justifyContent:'center', alignItems:'right'}}>
-            <h1>Victor Garcia</h1>
-        </div>
         <Sidebar/>
-            <div className="Settings-bar">
+        <Namebar/>
+            <div className="Settings-bar" style={{display: "flex"}}>
                 <Stack direction="column" spacing={2}>
-                    <Button variant="outlined"  size="large" sx={{bottom: 30, top: -235, left: 280, borderRadius:20, fontWeight:"600"}}>Payment Details</Button>
-                    <Button variant="outlined" size="large" sx={{bottom: 30, top: -235, left: 280, borderRadius:20, fontWeight:"600"}}>Reservations</Button>
-                    <Button variant="outlined" size="large" sx={{bottom: 30, top: -235, left: 280, borderRadius:20, fontWeight:"600"}}>Transaction History</Button>
+                    <Button variant="outlined"  size="large" sx={{bottom: 30, top: 30, left: 500, borderRadius:2, fontWeight:"600"}}>Payment Details</Button>
+                    <Button variant="outlined" size="large" sx={{bottom: 30, top: 30, left: 500, borderRadius:2, fontWeight:"600"}}>Reservations</Button>
+                    <Button variant="outlined" size="large" sx={{bottom: 50, top: 30, left: 500, borderRadius:2, fontWeight:"600"}}>Transaction History</Button>
                 </Stack>
             </div>
+            
             <Footer name="Andre G. Enriquez" course="BSCS" section="F2"/>
-    
         </div>
         );
 }
