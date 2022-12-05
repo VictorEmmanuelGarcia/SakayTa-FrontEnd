@@ -13,3 +13,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1{
+ font-size: 30px;
+ padding: 10px;
+ font-weight: bold;
+ text-align: center; 
+}
+
+.btn{
+  background-color: black;
+  color: white;
+  box-shadow: none;
+  align-items: center;
+}
+
+.landing{
+  background-color: #F79110 !important;
+  height: 100vh;
+  padding-top: 100px;
+}
