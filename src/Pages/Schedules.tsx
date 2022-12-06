@@ -11,9 +11,8 @@ function Schedules(){
     let clicked = false;
     return (
         <div className="ManageSchedule">
-
-        <ButtonOption/>
-
+            <ButtonOption/>
+            <Footer name="Johniel Comanda_Test" course="BSCS" section="F2"/>
         </div>
     )
 }
