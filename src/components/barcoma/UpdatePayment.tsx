@@ -56,7 +56,7 @@ function UpdatePayment(){
             <Button variant="contained" size="large" style={{backgroundColor:'#F79110', width: 475, fontWeight:"600"}}>Update Payment</Button>
         </Stack>
 
-        <Footer name="Johniel Comanda_Test" course="BSCS" section="F2"/>
+        <Footer name="Jane Carla Barcoma" course="BSCS" section="F2"/>
         </div>
     )
 }

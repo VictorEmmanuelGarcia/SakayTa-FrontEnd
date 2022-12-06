@@ -15,6 +15,7 @@ import UpdateSchedule from './components/comanda/SubPages/UpdateSchedule';
 import Schedules from './Pages/Schedules';
 import ReadPayment from './components/barcoma/ReadPayment';
 import UpdatePayment from './components/barcoma/UpdatePayment';
+import DeletePayment from './components/barcoma/DeletePayment';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/schedules/deleteschedule" element={<DeleteSchedule/>}/>
         <Route path="/payment/readpayment" element={<ReadPayment/>}/>
         <Route path="/payment/updatepayment" element={<UpdatePayment/>}/>
+        <Route path="/payment/deletepayment" element={<DeletePayment/>}/>
       </Routes>
     </Router>
   );
