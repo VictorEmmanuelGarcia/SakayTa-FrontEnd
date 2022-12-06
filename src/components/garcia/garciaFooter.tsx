@@ -7,7 +7,7 @@ type FooterProps = {
 }
 
 const Footer = ({ name, course, section }: FooterProps) => {
-  return ( 
+  return (
     <Box sx={{ padding: "32px 0" }}>
       <Typography variant="body2" color="black" align="center">
         {name} {course} {section} - CSIT321
@@ -16,7 +16,7 @@ const Footer = ({ name, course, section }: FooterProps) => {
         Copyright © SakayTa {new Date().getFullYear()}
       </Typography>
     </Box>
-   );
+  );
 }
- 
+
 export default Footer;
