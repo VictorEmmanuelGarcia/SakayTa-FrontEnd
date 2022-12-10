@@ -28,6 +28,16 @@ h1{
   align-items: center;
 }
 
+.outlinecolor {
+  border-color: #CA7715;
+  color: black;
+}
+
+.outlinecolor:hover {
+  background-color: #F79110;
+  color: white;
+}
+
 .landing{
   background-color: #F79110 !important;
   height: 100vh;
@@ -50,5 +60,4 @@ h1{
   text-align: left; 
   font-family: Helvetica;
   font-size: 30;
-
 }

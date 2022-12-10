@@ -16,6 +16,11 @@ import Schedules from './Pages/Schedules';
 import ReadPayment from './components/barcoma/ReadPayment';
 import UpdatePayment from './components/barcoma/UpdatePayment';
 import DeletePayment from './components/barcoma/DeletePayment';
+import Ticket from './Pages/Ticket';
+import CreateTicket from './components/terdes/SubPages/CreateTicket';
+import ReadTicket from './components/terdes/SubPages/ReadTicket';
+import UpdateTicket from './components/terdes/SubPages/UpdateTicket';
+import DeleteTicket from './components/terdes/SubPages/DeleteTicket';
 
 function App() {
   return (
@@ -34,6 +39,11 @@ function App() {
         <Route path="/payment/readpayment" element={<ReadPayment/>}/>
         <Route path="/payment/updatepayment" element={<UpdatePayment/>}/>
         <Route path="/payment/deletepayment" element={<DeletePayment/>}/>
+        <Route path="/ticket" element={<Ticket/>}/>
+        <Route path="/ticket/createticket" element={<CreateTicket/>}/>
+        <Route path="/ticket/readticket" element={<ReadTicket/>}/>
+        <Route path="/ticket/updateticket" element={<UpdateTicket/>}/>
+        <Route path="/ticket/deleteticket" element={<DeleteTicket/>}/>
       </Routes>
     </Router>
   );
