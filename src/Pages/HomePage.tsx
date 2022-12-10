@@ -15,13 +15,12 @@ function HomeApp() {
         <h4 style={{fontWeight:100}}>SakayTa Bus Reservation System is a system that reserves a bus and is a wonderful system with handsome</h4>
           <div className="Bus-input" style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
             <Stack direction="row" spacing={2}>
-              <TextField id="outlined-basic" label="Location" variant="outlined" />
-              <TextField id="outlined-basic" label="Destination" variant="outlined" />
-              <TextField id="outlined-basic" label="Date" variant="outlined" />
+              <TextField id="start-location" label="Location" variant="outlined" />
+              <TextField id="end-destination" label="Destination" variant="outlined" />
               <Button variant="contained" style={{backgroundColor:'#F79110', fontWeight:"600"}}>Search</Button>
               </Stack>
           </div>
-        <Footer name="Victor Emmanuel F. Garcia" course="BSCS" section="F1"/>
+        <Footer name="Victor Emmanuel F. Garcia & Andre G. Enriquez" course="BSCS" section="F1 & F2"/>
     </div>
   );
 }
