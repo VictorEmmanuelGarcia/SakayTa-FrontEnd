@@ -13,14 +13,14 @@ function Profile(){
     <Sidebar/>
         <div className="Profile-settings">
             <Stack direction="row" spacing={2}>
-                <TextField id="outlined-basic" label="First name" variant="outlined" sx={{bottom: 30, top: -250, left: 280,borderRadius:20}} />
+                <TextField id="outlined-basic" label="First name" variant="outlined" sx={{bottom: 30, top: -250, left: 280, borderRadius:20}} />
                 <TextField id="outlined-basic" label="Last name" variant="outlined" sx={{bottom: 30, top: -250, left: 280,borderRadius:20}} />
             </Stack>
             <Stack direction="column" spacing={2}>
-            <TextField id="outlined-basic" label="Email" variant="outlined" sx={{bottom: 30, top: -235, left: 280, borderRadius:20}} />
-                <TextField id="outlined-basic" label="Username" variant="outlined" sx={{bottom: 30, top: -235, left: 280, borderRadius:20}} />
-                <TextField id="outlined-basic" label="Password" variant="outlined" sx={{bottom: 30, top: -235, left: 280, borderRadius:20}} />
-                <TextField id="outlined-basic" label="Confirm password" variant="outlined" sx={{bottom: 30, top: -235, left: 280,borderRadius:20}} />
+            <TextField id="outlined-basic" label="Email" variant="outlined" sx={{bottom: 30, top: -235, left: 280, width: 468, borderRadius:20}} />
+                <TextField id="outlined-basic" label="Username" variant="outlined" sx={{bottom: 30, top: -235, left: 280, width: 468, borderRadius:20}} />
+                <TextField id="outlined-basic" label="Password" variant="outlined" sx={{bottom: 30, top: -235, left: 280, width: 468, borderRadius:20}} />
+                <TextField id="outlined-basic" label="Confirm password" variant="outlined" sx={{bottom: 30, top: -235, left: 280, width: 468, borderRadius:20}} />
                 </Stack>
         </div>
         <div className="Buttons-profile">

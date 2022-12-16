@@ -28,6 +28,11 @@ const settings = {
       text: 'settings'
     },
     {
+      name: 'Admin',
+      to: '/admin',
+      text: 'admin'
+    },
+    {
       name: 'Logout',
       to: '/logout',
       text: 'logout'
