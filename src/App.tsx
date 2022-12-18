@@ -22,12 +22,16 @@ import ReadTicket from './components/terdes/SubPages/ReadTicket';
 import UpdateTicket from './components/terdes/SubPages/UpdateTicket';
 import DeleteTicket from './components/terdes/SubPages/DeleteTicket';
 import About from './Pages/About';
+import Login from './Pages/Login';
+import Register from './Pages/Register';
 
 function App() {
   return (
     <Router>
       <Routes>
-      <Route path="/" element={<LandingPage/>}/>
+      <Route path="/" element={<Login/>}/>
+        <Route path="/register" element={<Register/>}/>
+        <Route path="/landingpage" element={<LandingPage/>}/>
         <Route path="/home" element={<HomePage/>}/>
         <Route path="/profile" element={<Profile/>}/>
         <Route path="/settings" element={<Settings/>}/>

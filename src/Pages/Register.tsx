@@ -7,17 +7,17 @@ function Register() {
     const navigate = useNavigate();
 
     const goToCreate = () => {
-    navigate('/Create');
-     };
+    navigate('/register');
+    };
 
     const goToMain = () => {
-    navigate('/');
+    navigate('/landingpage');
     };
 
 
     return (
         <div className="customer">
-            <img src={'/images/arrow.png'} alt="arrow" width={20} height={20} style={{ float: "left", paddingLeft: '30px', paddingTop: '30px' }} onClick={goToMain} />
+            <img src={'/assets/arrow.png'} alt="arrow" width={20} height={20} style={{ float: "left", paddingLeft: '30px', paddingTop: '30px' }} onClick={goToMain} />
             <text style={{ float: "left", paddingLeft: '30px', paddingTop: '30px', color: "white" }} onClick={goToCreate}>BACK </text>
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             <div className="CusHeader">
