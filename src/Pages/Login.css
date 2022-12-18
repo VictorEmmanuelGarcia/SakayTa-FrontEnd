@@ -1,9 +1,10 @@
 .Main {
     text-align: center;
     align-content: center;
-    background-image: url('/src/bg/loginbg.jpg');
-    background-size: 1700px;
+    background-size: 100px;
     background-repeat: no-repeat;
+    background-color: #eeefee;
+    /*background-image: url("/public/assets/buslogo.png");*/
   }
   
   
@@ -48,7 +49,7 @@
   .password {
     width: 30%;
     height: 40px;
-    border-color: #9bc24a;
+    border-color: #f79110;
     background: transparent;
     outline: none;
     border-top-style: hidden;
@@ -61,31 +62,32 @@
     width: 210px;
     height: 45px;
     border-radius: 20px;
-    background-color: #28381f;
+    background-color: #f79110;
     margin-bottom: 15px;
+    font-weight: bold;
     color: white;
-    font-family: "Verdana", sans-serif;
-    border-color: #9bc24a;
+    font-family: "Helvetica", sans-serif;
+    border-color: #f79110;;
   }
   
   .createnew {
     width: 210px;
     height: 45px;
     border-radius: 20px;
-    background-color: #a4ce57;
-    color: #000000;
-    font-family: "Verdana", sans-serif;
-    border-color: #9bc24a;
+    background-color: #f79110;
+    color: #ffff;
+    font-family: "Helvetica", sans-serif;
+    border-color: #f79110;
     margin-top: 5px;
   
   }
   
   .login:hover {
-    background-color: #466138;
+    background-color: #CD7607;
   }
   
   .createnew:hover {
-    background-color: #466138;
+    background-color: #CD7607;
   }
   
   
@@ -93,4 +95,12 @@
     text-align: center;
     align-content: center;
     background-size: cover;
+  }
+
+  .circle {
+    position: absolute;
+    width: 200px;
+    height: 1000px;
+    left: 100px;
+    top: 125px;
   }

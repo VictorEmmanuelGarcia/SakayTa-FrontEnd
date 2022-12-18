@@ -34,7 +34,7 @@ const settings = {
     },
     {
       name: 'Logout',
-      to: '/logout',
+      to: '/',
       text: 'logout'
     }
   ]
@@ -68,7 +68,7 @@ function ResponsiveAppBar() {
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            href="/home"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -141,7 +141,7 @@ function ResponsiveAppBar() {
             <Button
               onClick={handleCloseNavMenu}
               sx={{my:2, color: 'black', fontWeight: 700, fontSize: 16, fontFamily: 'Helvetica', top: 2}}
-              href="/"
+              href="/home"
               >
                 Home
               </Button>
