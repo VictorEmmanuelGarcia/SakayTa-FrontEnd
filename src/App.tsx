@@ -21,6 +21,7 @@ import CreateTicket from './components/terdes/SubPages/CreateTicket';
 import ReadTicket from './components/terdes/SubPages/ReadTicket';
 import UpdateTicket from './components/terdes/SubPages/UpdateTicket';
 import DeleteTicket from './components/terdes/SubPages/DeleteTicket';
+import About from './Pages/About';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/home" element={<HomePage/>}/>
         <Route path="/profile" element={<Profile/>}/>
         <Route path="/settings" element={<Settings/>}/>
+        <Route path="/about" element={<About/>}/>
         <Route path="*" element={<ErrorPage/>}/>
         <Route path="/schedules" element={<Schedules/>}/>
         <Route path="/schedules/createschedule" element={<CreateSchedule/>}/>
