@@ -1,7 +1,9 @@
 import React from 'react';
 import '../schedule.css';
-import { Stack, TextField, Button } from '@mui/material';
+import { Link } from 'react-router-dom';
+import { Button, Stack, TextField } from '@mui/material';
 import ResponsiveAppBar from '../components/ResponsiveAppBar';
+import Footer from '../components/garcia/garciaFooter';
 
 
 const schedule: React.FC = () =>{
@@ -26,7 +28,9 @@ const schedule: React.FC = () =>{
                             <h4>9:00 AM Dalaguete</h4>
                             <h4>Php180</h4>
                             <div className="list-button" style={{display:'flex', justifyContent:'right'}}>
+                            <Link to='/reservation'>
                             <Button variant="contained" style={{backgroundColor:'black', justifyContent: 'right', fontWeight:"750", width: "105px", height: "60px"}}>Reserve</Button>
+                            </Link>
                             </div>
                         </article>
 
@@ -36,7 +40,9 @@ const schedule: React.FC = () =>{
                             <h4>3:30 PM Santander</h4>
                             <h4>Php200</h4>
                             <div className="list-button" style={{display:'flex', justifyContent:'right'}}>
+                            <Link to='/reservation'>
                             <Button variant="contained" style={{backgroundColor:'black', justifyContent: 'right', fontWeight:"750", width: "105px", height: "60px"}}>Reserve</Button>
+                            </Link>
                             </div>
                         </article>
 
@@ -46,7 +52,9 @@ const schedule: React.FC = () =>{
                             <h4>12:00 AM Barili</h4>
                             <h4>Php150</h4>
                             <div className="list-button" style={{display:'flex', justifyContent:'right'}}>
+                            <Link to='/reservation'>
                             <Button variant="contained" style={{backgroundColor:'black', justifyContent: 'right', fontWeight:"750", width: "105px", height: "60px"}}>Reserve</Button>
+                            </Link>
                             </div>
                         </article>
                         
@@ -56,12 +64,15 @@ const schedule: React.FC = () =>{
                             <h4>7:00 PM Pinamungajan</h4>
                             <h4>Php180</h4>
                             <div className="list-button" style={{display:'flex', justifyContent:'right'}}>
+                            <Link to='/reservation'>
                             <Button variant="contained" style={{backgroundColor:'black', justifyContent: 'right', fontWeight:"750", width: "105px", height: "60px"}}>Reserve</Button>
+                            </Link>
                             </div>
                         </article>
 
                 </div>
         </div>
+        <Footer name="Victor Emmanuel F. Garcia & Andre G. Enriquez" course="BSCS" section="F1 & F2"/>
         </div>
         );
 }

@@ -5,7 +5,7 @@ import '../reservation.css';
 import ResponsiveAppBar from '../components/ResponsiveAppBar';
 import Footer from '../components/garcia/garciaFooter';
 
-function ReservationBus(this: any) {
+function MyBookings(this: any) {
     return (
         <div className="App">
         <ResponsiveAppBar/>
@@ -48,4 +48,4 @@ function ReservationBus(this: any) {
     );
   }
   
-  export default ReservationBus;
+  export default MyBookings;

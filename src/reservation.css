@@ -1,17 +1,16 @@
-
-.schedule__cards{
+.reservation__cards{
     display: grid;
-    grid-template-columns: repeat (4, 1fr);
     gap: 1.5 rem;
 }
 
-.schedule__card{
+.reservation__card{
     margin-top: 2rem;
     margin-left: 6rem;
-    margin-right: 6rem;
+    height: 680px;
+    width: 500px;
     background: #f79110;
     border: 1px solid transparent;
     border-radius: 1rem;
-    padding: 2rem;
-    text-align: left;
+    padding: 1rem;
+    text-align: center;
 }

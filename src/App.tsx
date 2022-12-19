@@ -26,6 +26,7 @@ import Login from './Pages/Login';
 import Register from './Pages/Register';
 import ReservationBus from './Pages/ReservationBus';
 import ScheduleList from './Pages/ScheduleList';
+import MyBookings from './Pages/MyBookings';
 
 function App() {
   return (
@@ -34,20 +35,26 @@ function App() {
       <Route path="/" element={<Login/>}/>
         <Route path="/register" element={<Register/>}/>
         <Route path="/landingpage" element={<LandingPage/>}/>
-        <Route path="/home" element={<HomePage/>}/>
+        <Route path="/home" element={<ScheduleList/>}/>
         <Route path="/profile" element={<Profile/>}/>
         <Route path="/settings" element={<Settings/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="*" element={<ErrorPage/>}/>
+
+        <Route path="/reservation" element={<ReservationBus/>}/>
+        <Route path="/mybookings" element={<MyBookings/>}/>
+
         <Route path="/schedulelist" element={<ScheduleList/>}/>
         <Route path="/schedules" element={<Schedules/>}/>
         <Route path="/schedules/createschedule" element={<CreateSchedule/>}/>
         <Route path="/schedules/readschedule" element={<ReadSchedule/>}/>
         <Route path="/schedules/updateschedule" element={<UpdateSchedule/>}/>
         <Route path="/schedules/deleteschedule" element={<DeleteSchedule/>}/>
+
         <Route path="/payment/readpayment" element={<ReadPayment/>}/>
         <Route path="/payment/updatepayment" element={<UpdatePayment/>}/>
         <Route path="/payment/deletepayment" element={<DeletePayment/>}/>
+
         <Route path="/ticket" element={<Ticket/>}/>
         <Route path="/ticket/createticket" element={<CreateTicket/>}/>
         <Route path="/ticket/readticket" element={<ReadTicket/>}/>
