@@ -149,7 +149,7 @@ function ResponsiveAppBar() {
               <Button
               onClick={handleCloseNavMenu}
               sx={{my:2, color: 'black', fontWeight: 700, fontSize: 16, fontFamily: 'Helvetica', top: 2}}
-              href="/"
+              href="/mybookings"
               >
                 My Bookings
               </Button>
