@@ -27,6 +27,8 @@ import Register from './Pages/Register';
 import ReservationBus from './Pages/ReservationBus';
 import ScheduleList from './Pages/ScheduleList';
 import MyBookings from './Pages/MyBookings';
+import ReservationPayment from './Pages/ReservationPayment';
+import ReservationHistory from './Pages/ReservationHistory';
 
 function App() {
   return (
@@ -43,6 +45,8 @@ function App() {
 
         <Route path="/reservation" element={<ReservationBus/>}/>
         <Route path="/mybookings" element={<MyBookings/>}/>
+        <Route path="/reservationpayment" element={<ReservationPayment/>}/>
+        <Route path="/reservationhistory" element={<ReservationHistory/>}/>
 
         <Route path="/schedulelist" element={<ScheduleList/>}/>
         <Route path="/schedules" element={<Schedules/>}/>

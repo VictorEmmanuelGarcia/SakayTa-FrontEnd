@@ -1,0 +1,16 @@
+
+.history__cards{
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    gap: 1 rem;
+}
+
+.history__card{
+    margin-top: -2.5rem;
+    margin-left: 30rem;
+    margin-right: -14rem;
+    background: #cec6bd;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    text-align: center;
+}
