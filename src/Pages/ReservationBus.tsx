@@ -25,12 +25,12 @@ function ReservationBus(this: any) {
                             <h5>6:30 AM Pardo</h5>
                             <h5>7:00 AM Naga</h5>
                             <h5>7:30 AM Carcar</h5>
-                            <h4>8:00 AM Dalaguete</h4>
+                            <h4>9:00 AM Dalaguete</h4>
                             <h4>Travel Time: 2 hours</h4>
                         </article>
                         <div>
                             <h1 style={{display:'flex', marginTop: "65px"}}>Payment Method</h1>
-                            <Link to='/reservation'>
+                            <Link to='/reservationpayment'>
                             <Stack direction="column" spacing={2}>
                             <Button variant="outlined"  size="large" sx={{borderColor:'#CA7715', color: 'black', bottom: 30, top: 20, width: 500, borderRadius:2, fontWeight:"600", ":hover": {backgroundColor: '#F79110', borderColor: '#F79110', color: 'white'}}}>GCash</Button>
                             <Button variant="outlined" size="large" sx={{borderColor:'#CA7715', color: 'black', bottom: 30, top: 20, borderRadius:2, fontWeight:"600", ":hover": {backgroundColor: '#F79110', borderColor: '#F79110', color: 'white'}}}>Maya</Button>
