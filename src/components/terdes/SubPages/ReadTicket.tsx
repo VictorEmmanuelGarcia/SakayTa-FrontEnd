@@ -9,7 +9,7 @@ function ReadTicket(){
     const navigate = useNavigate();
     const goToDelete = () => {
         alert("Are you sure you want to delete this ticket?");
-        navigate('/deletedticket');
+        navigate('/ticket/deletedticket');
         };
 
     return(

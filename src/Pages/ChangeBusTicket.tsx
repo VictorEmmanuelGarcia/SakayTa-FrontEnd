@@ -13,20 +13,20 @@ function ChangeBusTicket(this: any) {
                 <div className = "reservation__cards">
                 <Stack direction="row" spacing={20}>
                         <article className='reservation__card'>
-                            <h1>Main Information</h1>
+                        <h1>Main Information</h1>
                             <h4>22 December 2022, Thursday</h4>
                             <h4>1 person</h4>
                             <h4>Airconditioned</h4>
-                            <h4>Librando</h4>
+                            <h4>Sugbo Transit</h4>
                             <h4>31 seats</h4>
-                            <h4>Php 180</h4>
+                            <h4>Php 200</h4>
                             <h1>Schedule</h1>
-                            <h4>6:00 AM South Bus Terminal</h4>
-                            <h5>6:30 AM Pardo</h5>
-                            <h5>7:00 AM Naga</h5>
-                            <h5>7:30 AM Carcar</h5>
-                            <h4>9:00 AM Dalaguete</h4>
-                            <h4>Travel Time: 2 hours</h4>
+                            <h4>12:00 PM Starmall</h4>
+                            <h5>1:00 PM Carcar</h5>
+                            <h5>2:00 PM Sibonga</h5>
+                            <h5>3:00 PM Oslob</h5>
+                            <h4>3:30 PM Santander</h4>
+                            <h4>Travel Time: 3 hours and 3 minutes</h4>
                         </article>
                         <div>
                             <h1 style={{display:'flex', marginTop: "65px", marginLeft: "-14px", justifyContent: "center"}}>Ticket</h1>

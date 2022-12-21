@@ -1,6 +1,6 @@
 import React from 'react';
 import '../schedule.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Button, Stack, TextField } from '@mui/material';
 import ResponsiveAppBar from '../components/ResponsiveAppBar';
 import Footer from '../components/garcia/garciaFooter';
@@ -13,13 +13,15 @@ const schedule: React.FC = () =>{
         <h1>Reserve a Seat</h1>
         <h4 style={{fontWeight:100}}>SakayTa Bus Reservation System is a system that reserves a bus and is a wonderful system with handsome</h4>
           <div className="Bus-input" style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
-            <Link to='/showsearch'>
+            
             <Stack direction="row" spacing={2}>
               <TextField id="start-location" label="Location" variant="outlined" />
               <TextField id="end-destination" label="Destination" variant="outlined" />
-              <Button variant="contained" style={{backgroundColor:'#F79110', fontWeight:"600"}}>Search</Button>
-              </Stack>
+              <Link to='/showsearch'>
+              <Button variant="contained" style={{backgroundColor:'#F79110', fontWeight:"600", height: "50px"}}>Search</Button>
               </Link>
+              </Stack>
+              
           </div>
         
         <div className = "schedule__content" >
