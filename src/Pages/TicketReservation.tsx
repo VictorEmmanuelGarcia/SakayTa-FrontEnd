@@ -5,7 +5,7 @@ import '../reservation.css';
 import ResponsiveAppBar from '../components/ResponsiveAppBar';
 import Footer from '../components/garcia/garciaFooter';
 
-function ReservationBus(this: any) {
+function TicketReservation(this: any) {
     return (
         <div className="App">
         <ResponsiveAppBar/>
@@ -29,23 +29,27 @@ function ReservationBus(this: any) {
                             <h4>Travel Time: 2 hours</h4>
                         </article>
                         <div>
-                            <h1 style={{display:'flex', marginTop: "65px"}}>Payment Method</h1>
+                            <h1 style={{display:'flex', marginTop: "65px", marginLeft: "-14px", justifyContent: "center"}}>Ticket</h1>
+                            <div className='circle' style={{display:'flex', marginLeft: "840px", marginTop: "60px"}}>
+                            <img src={'/assets/QRCODE.png'} width={200} height={200}/>
+                            </div>
+                            <div style={{marginTop: "200px"}}>
+                            <h4>Ticket Id: 1</h4>
+                            <h4>Payment Id: null</h4>
+                            <h4 style={{color: "red"}}>Note: Ticket is not valid until physical payment is verified.</h4>
                             <Stack direction="column" spacing={2}>
-                            <Button variant="outlined"  size="large" sx={{borderColor:'#CA7715', color: 'black', bottom: 30, top: 20, width: 500, borderRadius:2, fontWeight:"600", ":hover": {backgroundColor: '#F79110', borderColor: '#F79110', color: 'white'}}}>GCash</Button>
-                            <Button variant="outlined" size="large" sx={{borderColor:'#CA7715', color: 'black', bottom: 30, top: 20, width: 500, borderRadius:2, fontWeight:"600", ":hover": {backgroundColor: '#F79110', borderColor: '#F79110', color: 'white'}}}>Maya</Button>
-                            <Link to='/ticketreservation'>
-                            <Button variant="outlined" size="large" sx={{borderColor:'#CA7715', color: 'black', bottom: 50, top: 20, width: 500, borderRadius:2, fontWeight:"600", ":hover": {backgroundColor: '#F79110', borderColor: '#F79110', color: 'white'}}}>Pay on the go</Button>
-                            </Link>
+                            <Button variant="outlined"  size="large" sx={{borderColor:'#CA7715', color: 'black', bottom: 30, top: 20, width: 500, borderRadius:2, fontWeight:"600", ":hover": {backgroundColor: '#F79110', borderColor: '#F79110', color: 'white'}}}>Download</Button>
                             </Stack>
+                            </div>
                         </div>
                     </Stack>
                 </div>
         </div>
         <div style={{marginTop: "-30px"}}>
-        <Footer name="Andre G. Enriquez" course="BSCS" section="F2"/>
+        <Footer name="Jose Felipe Terdes" course="BSCS" section="F2"/>
         </div>
         </div>
     );
   }
   
-  export default ReservationBus;
+  export default TicketReservation;
