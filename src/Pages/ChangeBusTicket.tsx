@@ -5,7 +5,7 @@ import '../reservation.css';
 import ResponsiveAppBar from '../components/ResponsiveAppBar';
 import Footer from '../components/garcia/garciaFooter';
 
-function TicketReservation(this: any) {
+function ChangeBusTicket(this: any) {
     return (
         <div className="App">
         <ResponsiveAppBar/>
@@ -34,7 +34,7 @@ function TicketReservation(this: any) {
                             <img src={'/assets/QRCODE.png'} width={200} height={200}/>
                             </div>
                             <div style={{marginTop: "200px"}}>
-                            <h4>Ticket Id: 4</h4>
+                            <h4>Ticket Id: 5</h4>
                             <h4>Payment Id: null</h4>
                             <h4 style={{color: "red"}}>Note: Ticket is not valid until physical payment is verified.</h4>
                             <Stack direction="column" spacing={2}>
@@ -52,4 +52,4 @@ function TicketReservation(this: any) {
     );
   }
   
-  export default TicketReservation;
+  export default ChangeBusTicket;

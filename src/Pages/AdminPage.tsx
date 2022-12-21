@@ -20,7 +20,7 @@ function AdminPage(this: any) {
                             <Link to='/schedule'>
                             <Button variant="outlined" size="large" sx={{borderColor:'#CA7715', color: 'black', bottom: 50, top: 20, width: 900, borderRadius:2, fontWeight:"600", ":hover": {backgroundColor: '#F79110', borderColor: '#F79110', color: 'white'}}}>Schedule</Button>
                             </Link>
-                            <Link to='/ticket'>
+                            <Link to='/ticket/readticket'>
                             <Button variant="outlined" size="large" sx={{borderColor:'#CA7715', color: 'black', bottom: 50, top: 20, width: 900, borderRadius:2, fontWeight:"600", ":hover": {backgroundColor: '#F79110', borderColor: '#F79110', color: 'white'}}}>Ticket</Button>
                             </Link>
                             </Stack>

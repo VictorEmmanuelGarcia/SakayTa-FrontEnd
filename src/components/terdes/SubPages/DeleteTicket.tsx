@@ -1,14 +1,14 @@
 import { Stack, TextField, Button } from "@mui/material";
 import Footer from "../../garcia/garciaFooter";
+import ResponsiveAppBar from "../../ResponsiveAppBar";
 import ButtonOption from "../ButtonOptions";
 
 
 function DeleteTicket(){
     return(
         <div className="DeleteTicket">
-            
+        <ResponsiveAppBar/>
         <ButtonOption/>
-
         <Stack direction="row" spacing={5} display="flex" alignItems="center" justifyContent={"center"} height="10vh">
             <TextField id="ticket-number" label="Ticket ID" variant="outlined" sx={{width: 500, borderRadius:20}} />
         </Stack>

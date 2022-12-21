@@ -1,17 +1,10 @@
 import { Stack, TextField, Button } from "@mui/material";
-import { Link, useNavigate } from "react-router-dom";
-import Footer from "../../garcia/garciaFooter";
-import ResponsiveAppBar from "../../ResponsiveAppBar";
-import ButtonOption from "../ButtonOptions";
+import { Link } from "react-router-dom";
+import Footer from "../components/garcia/garciaFooter";
+import ResponsiveAppBar from "../components/ResponsiveAppBar";
 
 
-function ReadTicket(){
-    const navigate = useNavigate();
-    const goToDelete = () => {
-        alert("Are you sure you want to delete this ticket?");
-        navigate('/deletedticket');
-        };
-
+function DeletedTicket(){
     return(
         <div className="ReadTicket">        
         <ResponsiveAppBar/>
@@ -68,20 +61,6 @@ function ReadTicket(){
                         </article>
 
                         <article className='schedule__card'>
-                            <h2>Ticket ID: 4</h2>
-                            <h4>Reservation ID: 4</h4>
-                            <h4>Destination: Dalaguete</h4>
-                            <h4>Time: 6:00 AM - 9:00 AM</h4>
-                            <h4>Payment ID: null</h4>
-                            <div className="list-button" style={{display:'flex', justifyContent:'right'}}>
-                            <Stack direction="row" spacing={2}>
-                            <Button variant="contained" style={{backgroundColor:'green', justifyContent: 'center', fontWeight:"750", width: "105px", height: "60px"}}>Update</Button>
-                            <Button variant="contained" style={{backgroundColor:'red', justifyContent: 'center', fontWeight:"750", width: "105px", height: "60px"}} onClick={goToDelete}>Delete</Button>
-                            </Stack>
-                            </div>
-                        </article>
-
-                        <article className='schedule__card'>
                             <h2>Ticket ID: 5</h2>
                             <h4>Reservation ID: 5</h4>
                             <h4>Destination: Santander</h4>
@@ -99,6 +78,7 @@ function ReadTicket(){
           <Footer name="Jose Felipe Terdes" course="BSCS" section="F2"/>
         </div>
     )
+
 }
 
-export default ReadTicket;
+export default DeletedTicket;

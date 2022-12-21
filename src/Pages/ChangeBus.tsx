@@ -30,7 +30,7 @@ function ChangeBus(this: any) {
                         </article>
                         <div>
                             <h1 style={{display:'flex', marginTop: "65px"}}>Payment Method</h1>
-                            <Link to='/reservationpayment'>
+                            <Link to='/changebusticket'>
                             <Stack direction="column" spacing={2}>
                             <Button variant="outlined"  size="large" sx={{borderColor:'#CA7715', color: 'black', bottom: 30, top: 20, width: 500, borderRadius:2, fontWeight:"600", ":hover": {backgroundColor: '#F79110', borderColor: '#F79110', color: 'white'}}}>GCash</Button>
                             <Button variant="outlined" size="large" sx={{borderColor:'#CA7715', color: 'black', bottom: 30, top: 20, borderRadius:2, fontWeight:"600", ":hover": {backgroundColor: '#F79110', borderColor: '#F79110', color: 'white'}}}>Maya</Button>
