@@ -30,9 +30,9 @@ function Login(){
         </div>
         <br/>
         <div className="or">
-            <button className="login" style={{marginLeft: '500px'}} onClick={goToHome}>LOG IN</button>
+            <button className="login" style={{marginLeft: '500px', fontWeight:600}} onClick={goToHome}>LOG IN</button>
             <div className='or' style={{marginLeft: '500px', color: "black"}}>OR</div><br/>
-            <button className="createnew" style={{marginLeft: '500px'}}onClick={goToCreate} >Create New Account</button>
+            <button className="createnew" style={{marginLeft: '500px', fontWeight:600}}onClick={goToCreate} >Create New Account</button>
             <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         </div>
     </div>
