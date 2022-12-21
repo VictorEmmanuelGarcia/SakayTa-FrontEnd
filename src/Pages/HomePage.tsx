@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import '../App.css';
-import {useNavigate} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import Footer from '../components/garcia/garciaFooter';
 import ResponsiveAppBar from '../components/ResponsiveAppBar';
 import { Stack } from '@mui/system';
@@ -17,7 +17,9 @@ function HomeApp() {
             <Stack direction="row" spacing={2}>
               <TextField id="start-location" label="Location" variant="outlined" />
               <TextField id="end-destination" label="Destination" variant="outlined" />
+              <Link to='/showsearch'>
               <Button variant="contained" style={{backgroundColor:'#F79110', fontWeight:"600"}}>Search</Button>
+              </Link>
               </Stack>
           </div>
         <Footer name="Victor Emmanuel F. Garcia & Andre G. Enriquez" course="BSCS" section="F1 & F2"/>

@@ -29,6 +29,8 @@ import ScheduleList from './Pages/ScheduleList';
 import MyBookings from './Pages/MyBookings';
 import ReservationPayment from './Pages/ReservationPayment';
 import ReservationHistory from './Pages/ReservationHistory';
+import ShowSearch from './Pages/ShowSearch';
+import AdminPage from './Pages/AdminPage';
 
 function App() {
   return (
@@ -42,11 +44,13 @@ function App() {
         <Route path="/settings" element={<Settings/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="*" element={<ErrorPage/>}/>
+        <Route path="/admin" element={<AdminPage/>}/>
 
         <Route path="/reservation" element={<ReservationBus/>}/>
         <Route path="/mybookings" element={<MyBookings/>}/>
         <Route path="/reservationpayment" element={<ReservationPayment/>}/>
         <Route path="/reservationhistory" element={<ReservationHistory/>}/>
+        <Route path="/showsearch" element={<ShowSearch/>}/>
 
         <Route path="/schedulelist" element={<ScheduleList/>}/>
         <Route path="/schedules" element={<Schedules/>}/>
