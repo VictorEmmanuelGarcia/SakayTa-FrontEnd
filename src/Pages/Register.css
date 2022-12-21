@@ -55,7 +55,7 @@
     border-left-style: hidden;
     border-bottom-style: groove;
   }
-  
+
   .address{
     width: 25%;
     height: 40px;
@@ -123,4 +123,16 @@
   
   .registerr:hover{
     background-color: #CD7607;
+  }
+
+  .registerHeader{
+    font-size: 150px;
+    font-family: Helvetica;
+    font-weight: 600;
+  }
+
+  .welcomeHeader{
+    font-size: 30px;
+    font-family: Helvetica;
+    font-weight: 500;
   }

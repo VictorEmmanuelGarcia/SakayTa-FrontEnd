@@ -7,7 +7,7 @@ function Register() {
     const navigate = useNavigate();
 
     const goToCreate = () => {
-    navigate('/register');
+    navigate('/');
     };
 
     const goToMain = () => {
@@ -18,12 +18,18 @@ function Register() {
     return (
         <div className="customer">
             <img src={'/assets/arrow.png'} alt="arrow" width={20} height={20} style={{ float: "left", paddingLeft: '30px', paddingTop: '30px' }} onClick={goToMain} />
-            <text style={{ float: "left", paddingLeft: '30px', paddingTop: '30px', color: "white" }} onClick={goToCreate}>BACK </text>
-            <br /><br /><br /><br /><br /><br /><br /><br />
+            <text style={{ float: "left", paddingLeft: '30px', paddingTop: '30px', color: "black", fontWeight:600 }} onClick={goToCreate}>BACK </text>
+            <br /><br /><br />
+            <div className="welcomeHeader">
+               Welcome to
+            </div>
+            <div className="registerHeader">
+               SakayTa
+            </div>
             <div className="CusHeader">
 
             </div>
-            <br /><br /><br />
+            <br />
             <div className="inputs">
                 <input className="usernamee" placeholder="Username" style={{ color: "black" }} />
                 <br />
