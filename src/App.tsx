@@ -31,6 +31,8 @@ import ReservationPayment from './Pages/ReservationPayment';
 import ReservationHistory from './Pages/ReservationHistory';
 import ShowSearch from './Pages/ShowSearch';
 import AdminPage from './Pages/AdminPage';
+import ChangeReservation from './Pages/ChangeReservation';
+import ChangeBus from './Pages/ChangeBus';
 
 function App() {
   return (
@@ -51,6 +53,8 @@ function App() {
         <Route path="/reservationpayment" element={<ReservationPayment/>}/>
         <Route path="/reservationhistory" element={<ReservationHistory/>}/>
         <Route path="/showsearch" element={<ShowSearch/>}/>
+        <Route path="/changereservation" element={<ChangeReservation/>}/>
+        <Route path="/changebus" element={<ChangeBus/>}/>
 
         <Route path="/schedulelist" element={<ScheduleList/>}/>
         <Route path="/schedules" element={<Schedules/>}/>

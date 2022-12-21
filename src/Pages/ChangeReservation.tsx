@@ -6,21 +6,10 @@ import ResponsiveAppBar from '../components/ResponsiveAppBar';
 import Footer from '../components/garcia/garciaFooter';
 
 
-const schedule: React.FC = () =>{
+const changereservation: React.FC = () =>{
     return (
         <div className="App">
         <ResponsiveAppBar/>
-        <h1>Reserve a Seat</h1>
-        <h4 style={{fontWeight:100}}>SakayTa Bus Reservation System is a system that reserves a bus and is a wonderful system with handsome</h4>
-          <div className="Bus-input" style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
-            <Link to='/showsearch'>
-            <Stack direction="row" spacing={2}>
-              <TextField id="start-location" label="Location" variant="outlined" />
-              <TextField id="end-destination" label="Destination" variant="outlined" />
-              <Button variant="contained" style={{backgroundColor:'#F79110', fontWeight:"600"}}>Search</Button>
-              </Stack>
-              </Link>
-          </div>
         
         <div className = "schedule__content" >
                 <div className = "schedule__cards">
@@ -30,8 +19,8 @@ const schedule: React.FC = () =>{
                             <h4>3:30 PM Santander</h4>
                             <h4>Php200</h4>
                             <div className="list-button" style={{display:'flex', justifyContent:'right'}}>
-                            <Link to='/reservation'>
-                            <Button variant="contained" style={{backgroundColor:'black', justifyContent: 'center', fontWeight:"750", width: "105px", height: "60px"}}>Reserve</Button>
+                            <Link to='/changebus'>
+                            <Button variant="contained" style={{backgroundColor:'green', justifyContent: 'center', fontWeight:"750", width: "105px", height: "60px"}}>Choose</Button>
                             </Link>
                             </div>
                         </article>
@@ -43,7 +32,7 @@ const schedule: React.FC = () =>{
                             <h4>Php150</h4>
                             <div className="list-button" style={{display:'flex', justifyContent:'right'}}>
                             <Link to='/reservation'>
-                            <Button variant="contained" style={{backgroundColor:'black', justifyContent: 'center', fontWeight:"750", width: "105px", height: "60px"}}>Reserve</Button>
+                            <Button variant="contained" style={{backgroundColor:'green', justifyContent: 'center', fontWeight:"750", width: "105px", height: "60px"}}>Choose</Button>
                             </Link>
                             </div>
                         </article>
@@ -55,7 +44,7 @@ const schedule: React.FC = () =>{
                             <h4>Php180</h4>
                             <div className="list-button" style={{display:'flex', justifyContent:'right'}}>
                             <Link to='/reservation'>
-                            <Button variant="contained" style={{backgroundColor:'black', justifyContent: 'center', fontWeight:"750", width: "105px", height: "60px"}}>Reserve</Button>
+                            <Button variant="contained" style={{backgroundColor:'green', justifyContent: 'center', fontWeight:"750", width: "105px", height: "60px"}}>Choose</Button>
                             </Link>
                             </div>
                         </article>
@@ -67,16 +56,16 @@ const schedule: React.FC = () =>{
                             <h4>Php180</h4>
                             <div className="list-button" style={{display:'flex', justifyContent:'right'}}>
                             <Link to='/reservation'>
-                            <Button variant="contained" style={{backgroundColor:'black', justifyContent: 'center', fontWeight:"750", width: "105px", height: "60px"}}>Reserve</Button>
+                            <Button variant="contained" style={{backgroundColor:'green', justifyContent: 'center', fontWeight:"750", width: "105px", height: "60px"}}>Choose</Button>
                             </Link>
                             </div>
                         </article>
 
                 </div>
         </div>
-        <Footer name="Victor Emmanuel F. Garcia & Andre G. Enriquez" course="BSCS" section="F1 & F2"/>
+        <Footer name="Andre G. Enriquez" course="BSCS" section="F1 & F2"/>
         </div>
         );
 }
 
-export default schedule;
+export default changereservation;
