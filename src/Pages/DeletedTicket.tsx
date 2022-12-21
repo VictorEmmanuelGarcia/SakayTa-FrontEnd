@@ -68,7 +68,9 @@ function DeletedTicket(){
                             <h4>Payment ID: null</h4>
                             <div className="list-button" style={{display:'flex', justifyContent:'right'}}>
                             <Stack direction="row" spacing={2}>
+                            <Link to='/ticket/updateticket'>
                             <Button variant="contained" style={{backgroundColor:'green', justifyContent: 'center', fontWeight:"750", width: "105px", height: "60px"}}>Update</Button>
+                            </Link>
                             <Button variant="contained" style={{backgroundColor:'red', justifyContent: 'center', fontWeight:"750", width: "105px", height: "60px"}}>Delete</Button>
                             </Stack>
                             </div>
