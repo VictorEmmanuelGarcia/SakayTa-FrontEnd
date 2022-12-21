@@ -12,6 +12,7 @@ function MyBookings(this: any) {
         <div className="Settings">
         <ResponsiveAppBar/>
         <Sidebar/>
+        <div  style={{marginLeft: "-5cm"}}>
         <Namebar/>
             <div className="Settings-bar" style={{display: "flex"}}>
                 <Stack direction="column" spacing={3}>
@@ -22,7 +23,7 @@ function MyBookings(this: any) {
                 </Link>
                 </Stack>
             </div>
-            
+            </div>
             <Footer name="Andre G. Enriquez" course="BSCS" section="F2"/>
         </div>
     );

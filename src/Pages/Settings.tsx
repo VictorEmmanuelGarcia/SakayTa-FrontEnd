@@ -13,6 +13,7 @@ function Settings(){
         <div className="Settings">
         <ResponsiveAppBar/>
         <Sidebar/>
+        <div  style={{marginLeft: "-5cm"}}>
         <Namebar/>
             <div className="Settings-bar" style={{display: "flex"}}>
                 <Stack direction="column" spacing={2}>
@@ -23,7 +24,7 @@ function Settings(){
                     <Button variant="outlined" size="large" sx={{borderColor:'#CA7715', color: 'black', bottom: 50, top: 30, left: 500, borderRadius:2, fontWeight:"600", ":hover": {backgroundColor: '#F79110', borderColor: '#F79110', color: 'white'}}}>Transaction History</Button>
                 </Stack>
             </div>
-            
+            </div>
             <Footer name="Andre G. Enriquez" course="BSCS" section="F2"/>
         </div>
         );
