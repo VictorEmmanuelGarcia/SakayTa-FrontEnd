@@ -37,7 +37,7 @@ function Register() {
                 <br />
                 <input className="lastname" placeholder="Last Name" style={{ color: "black" }} />
                 <br />
-                <input className="address" placeholder="Address" style={{ color: "black" }} />
+                <input className="address" placeholder="E-mail" style={{ color: "black" }} />
                 <br />
                 <input className="passwordd" placeholder="Password" type="password" style={{ color: "black" }} />
                 <br />
