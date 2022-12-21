@@ -34,6 +34,8 @@ import AdminPage from './Pages/AdminPage';
 import ChangeReservation from './Pages/ChangeReservation';
 import ChangeBus from './Pages/ChangeBus';
 import TicketReservation from './Pages/TicketReservation';
+import ChangeBusTicket from './Pages/ChangeBusTicket';
+import DeletedTicket from './Pages/DeletedTicket';
 
 function App() {
   return (
@@ -57,6 +59,7 @@ function App() {
         <Route path="/showsearch" element={<ShowSearch/>}/>
         <Route path="/changereservation" element={<ChangeReservation/>}/>
         <Route path="/changebus" element={<ChangeBus/>}/>
+        <Route path="/changebusticket" element={<ChangeBusTicket/>}/>
 
         <Route path="/schedulelist" element={<ScheduleList/>}/>
         <Route path="/schedules" element={<Schedules/>}/>
@@ -70,10 +73,8 @@ function App() {
         <Route path="/payment/deletepayment" element={<DeletePayment/>}/>
 
         <Route path="/ticket" element={<Ticket/>}/>
-        <Route path="/ticket/createticket" element={<CreateTicket/>}/>
         <Route path="/ticket/readticket" element={<ReadTicket/>}/>
-        <Route path="/ticket/updateticket" element={<UpdateTicket/>}/>
-        <Route path="/ticket/deleteticket" element={<DeleteTicket/>}/>
+        <Route path="/deletedticket" element={<DeletedTicket/>}/>
       </Routes>
     </Router>
   );

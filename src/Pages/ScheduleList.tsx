@@ -71,7 +71,6 @@ const schedule: React.FC = () =>{
                             </Link>
                             </div>
                         </article>
-
                 </div>
         </div>
         <Footer name="Victor Emmanuel F. Garcia & Andre G. Enriquez" course="BSCS" section="F1 & F2"/>

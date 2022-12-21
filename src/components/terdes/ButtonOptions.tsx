@@ -13,14 +13,6 @@ function ButtonOptions() {
                             >
                                 Display Tickets
                         </Button>
-                        <Button id="create-ticket" 
-                            variant="text" 
-                            size="medium"      
-                            sx={{backgroundColor:"white", width: 250, fontWeight:"600"}}                
-                            href="/ticket/createticket"                           
-                            >
-                                Create Ticket                           
-                        </Button>
                         <Button id="update-ticket" 
                             variant="text" 
                             size="medium" 
