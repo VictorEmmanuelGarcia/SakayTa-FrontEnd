@@ -36,6 +36,7 @@ import ChangeBus from './Pages/ChangeBus';
 import TicketReservation from './Pages/TicketReservation';
 import ChangeBusTicket from './Pages/ChangeBusTicket';
 import DeletedTicket from './Pages/DeletedTicket';
+import FindTicket from './Pages/FindTicket';
 
 function App() {
   return (
@@ -74,7 +75,8 @@ function App() {
 
         <Route path="/ticket" element={<Ticket/>}/>
         <Route path="/ticket/readticket" element={<ReadTicket/>}/>
-        <Route path="/deletedticket" element={<DeletedTicket/>}/>
+        <Route path="/ticket/findticket" element={<FindTicket/>}/>
+        <Route path="/ticket/deletedticket" element={<DeletedTicket/>}/>
       </Routes>
     </Router>
   );
