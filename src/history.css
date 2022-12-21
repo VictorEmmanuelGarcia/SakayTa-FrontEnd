@@ -2,7 +2,8 @@
 .history__cards{
     display: grid;
     grid-template-columns: repeat (4, 1fr);
-    gap: 1 rem;
+    gap: 10 px;
+    border-spacing: 10px;
 }
 
 .history__card{

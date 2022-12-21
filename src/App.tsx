@@ -38,6 +38,7 @@ import ChangeBusTicket from './Pages/ChangeBusTicket';
 import DeletedTicket from './Pages/DeletedTicket';
 import FindTicket from './Pages/FindTicket';
 import UpdatedTicket from './Pages/UpdatedTicket';
+import ReservationHistory2 from './Pages/ReservationHistory2';
 
 function App() {
   return (
@@ -58,6 +59,7 @@ function App() {
         <Route path="/reservationpayment" element={<ReservationPayment/>}/>
         <Route path="/ticketreservation" element={<TicketReservation/>}/>
         <Route path="/reservationhistory" element={<ReservationHistory/>}/>
+        <Route path="/reservationhistory2" element={<ReservationHistory2/>}/>
         <Route path="/showsearch" element={<ShowSearch/>}/>
         <Route path="/changereservation" element={<ChangeReservation/>}/>
         <Route path="/changebus" element={<ChangeBus/>}/>

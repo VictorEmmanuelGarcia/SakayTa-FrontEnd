@@ -19,7 +19,9 @@ function ReadTicket(){
         <h1>Ticket Management</h1>   
             <Stack direction="column" spacing={5} display="flex" alignItems="center" justifyContent={"center"}>
               <TextField id="outlined-basic" label="Ticket ID" variant="outlined" sx={{width: 475, borderRadius:20}}/>
+              <Link to='/ticket/findticket'>
               <Button variant="contained" style={{backgroundColor:'#F79110', width: 475, fontWeight:"600"}}>Search</Button>
+              </Link>
             </Stack>
         </div>  
 
