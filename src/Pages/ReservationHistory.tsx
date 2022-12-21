@@ -1,6 +1,6 @@
 import { Button, Stack, TextField } from '@mui/material';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../history.css';
 import ResponsiveAppBar from '../components/ResponsiveAppBar';
 import Footer from '../components/garcia/garciaFooter';
@@ -8,10 +8,24 @@ import Sidebar from '../components/sidebar';
 import Namebar from '../components/enriquez/namebar';
 
 function ReservationHistory(this: any) {
+
+    const navigate = useNavigate();
+
+    const goToChange = () => {
+        alert("Are you sure you want to change your reservation?");
+        navigate('/changereservation');
+        };
+
+    const goToCancel = () => {
+        alert("Are you sure you want to cancel your reservation?");
+        navigate('/mybookings');
+        };
+
     return (
         <div className="Settings">
         <ResponsiveAppBar/>
         <Sidebar/>
+        <div  style={{marginLeft: "-5cm"}}>
         <Namebar/>
             <div className="Settings-bar" style={{display: "flex"}}>
                 <Stack direction="column" spacing={3}>
@@ -21,9 +35,16 @@ function ReservationHistory(this: any) {
                             <h3>22 December 2022</h3>
                             <h5>6:00 AM - 9:00 AM</h5>
                             <h5> South Bus Terminal to Dalaguete</h5>
+                            <div className="list-button" style={{display:'flex', justifyContent:'center'}}>
+                            <Stack direction="row" spacing={2}>
+                            <Button variant="contained" style={{backgroundColor:'green', justifyContent: 'center', fontWeight:"750", width: "105px", height: "40px", marginBottom: "10px"}} onClick={goToChange}>Change</Button>
+                            <Button variant="contained" style={{backgroundColor:'red', justifyContent: 'center', fontWeight:"750", width: "105px", height: "40px", marginBottom: "10px", marginRight: "10px"}} onClick={goToCancel}>Cancel</Button>
+                            </Stack>
+                            </div>
                 </article>
                 </div>
                 </Stack>
+            </div>
             </div>
             <Footer name="Andre G. Enriquez" course="BSCS" section="F2"/>
         </div>
