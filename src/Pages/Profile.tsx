@@ -24,7 +24,7 @@ function Profile(){
     <div className="Profile">
     <ResponsiveAppBar/>
     <Sidebar/>
-        <div className="Profile-settings">
+        <div className="Profile-settings" style={{marginTop:'100px', marginLeft:'60px'}}>
             <Stack direction="row" spacing={2}>
                 <TextField id="outlined-basic" label="First name" variant="outlined" sx={{bottom: 30, top: -250, left: 280, borderRadius:20}} defaultValue="Victor Magtanggol" />
                 <TextField id="outlined-basic" label="Last name" variant="outlined" sx={{bottom: 30, top: -250, left: 280,borderRadius:20}} defaultValue="Garcia"/>
@@ -36,7 +36,7 @@ function Profile(){
                 <TextField id="outlined-basic" label="Confirm password" variant="outlined" sx={{bottom: 30, top: -235, left: 280, width: 468, borderRadius:20}} defaultValue="aldub4Ever" type={"password"} />
                 </Stack>
         </div>
-        <div className="Buttons-profile">
+        <div className="Buttons-profile" style={{marginLeft:'60px'}}>
             <Stack direction="row" spacing={2}>
                 <Button className="update" variant="contained" size="large" sx={{bottom: 30, top: -200, left: 290, borderRadius:20, backgroundColor:'#F79110', fontWeight:"600",     '&:hover': {
                 backgroundColor: '#fff',

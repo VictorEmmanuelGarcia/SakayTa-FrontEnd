@@ -10,8 +10,7 @@ import { relative } from "path";
 const Sidebar: React.FC = () => {
     return (
         
-      <div style={{ width: 250 }}>
-        <img style={{ width: 80, height: 80, position: "relative", bottom: 30, top: 30, right: 80, color:'black' }} src={logo} alt="Person" />
+      <div style={{ width: 250, marginTop: '5px' }}>
         <ul className="sidebarRows">
           {SidebarData.map((val, key) => {
             return (
