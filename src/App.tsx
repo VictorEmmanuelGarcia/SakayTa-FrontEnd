@@ -33,6 +33,7 @@ import ShowSearch from './Pages/ShowSearch';
 import AdminPage from './Pages/AdminPage';
 import ChangeReservation from './Pages/ChangeReservation';
 import ChangeBus from './Pages/ChangeBus';
+import TicketReservation from './Pages/TicketReservation';
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
         <Route path="/reservation" element={<ReservationBus/>}/>
         <Route path="/mybookings" element={<MyBookings/>}/>
         <Route path="/reservationpayment" element={<ReservationPayment/>}/>
+        <Route path="/ticketreservation" element={<TicketReservation/>}/>
         <Route path="/reservationhistory" element={<ReservationHistory/>}/>
         <Route path="/showsearch" element={<ShowSearch/>}/>
         <Route path="/changereservation" element={<ChangeReservation/>}/>
