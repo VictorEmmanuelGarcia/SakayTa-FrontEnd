@@ -17,7 +17,7 @@ function AdminPage(this: any) {
                             <Link to='/payment'>
                             <Button variant="outlined" size="large" sx={{borderColor:'#CA7715', color: 'black', bottom: 30, top: 20, width: 900, borderRadius:2, fontWeight:"600", ":hover": {backgroundColor: '#F79110', borderColor: '#F79110', color: 'white'}}}>Payment</Button>
                             </Link>
-                            <Link to='/schedule'>
+                            <Link to='/schedules/readschedule'>
                             <Button variant="outlined" size="large" sx={{borderColor:'#CA7715', color: 'black', bottom: 50, top: 20, width: 900, borderRadius:2, fontWeight:"600", ":hover": {backgroundColor: '#F79110', borderColor: '#F79110', color: 'white'}}}>Schedule</Button>
                             </Link>
                             <Link to='/ticket/readticket'>

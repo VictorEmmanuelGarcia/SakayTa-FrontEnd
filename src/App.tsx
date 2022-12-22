@@ -39,6 +39,10 @@ import DeletedTicket from './Pages/DeletedTicket';
 import FindTicket from './Pages/FindTicket';
 import UpdatedTicket from './Pages/UpdatedTicket';
 import ReservationHistory2 from './Pages/ReservationHistory2';
+import FindSchedule from './Pages/FindSchedule';
+import DeletedSchedule from './Pages/DeletedSchedule';
+import UpdatedSchedule from './Pages/UpdatedSchedule';
+import DeleteSchedSearch from './components/comanda/SubPages/DeleteSchedSearch';
 
 function App() {
   return (
@@ -66,6 +70,10 @@ function App() {
         <Route path="/changebusticket" element={<ChangeBusTicket/>}/>
 
         <Route path="/schedulelist" element={<ScheduleList/>}/>
+        <Route path="/schedules/findschedule" element={<FindSchedule/>}/>
+        <Route path="/schedule/findschedule" element={<DeleteSchedSearch/>}/>
+        <Route path="/schedules/readschedules" element={<DeletedSchedule/>}/>
+        <Route path="/schedule/readschedules" element={<UpdatedSchedule/>}/>
         <Route path="/schedules" element={<Schedules/>}/>
         <Route path="/schedules/createschedule" element={<CreateSchedule/>}/>
         <Route path="/schedules/readschedule" element={<ReadSchedule/>}/>
