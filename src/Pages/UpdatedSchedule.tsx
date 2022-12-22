@@ -1,18 +1,16 @@
 import { Stack, TextField, Button } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
-import Footer from "../../garcia/garciaFooter";
-import ResponsiveAppBar from "../../ResponsiveAppBar";
-import ButtonOption from "../ButtonOptions";
+import ButtonOption from "../components/comanda/ButtonOptions";
+import Footer from "../components/garcia/garciaFooter";
+import ResponsiveAppBar from "../components/ResponsiveAppBar";
+
 
 
 function ReadSchedule(){
     const navigate = useNavigate();
     const goToDelete = () => {
         alert("Are you sure you want to delete this ticket?");
-        navigate('/schedules/readschedules');
-        };
-    const goToUpdate = () => {
-          navigate('/schedules/updateschedule');
+        navigate('/ticket/deletedticket');
         };
 
     return(
@@ -39,11 +37,11 @@ function ReadSchedule(){
                             <h4>Location: CSBT</h4>
                             <h4>Destination: Barili</h4>
                             <h4>Time: 10:30 AM - 12:00 PM</h4>
-                            <h4>Schedule Date: December 23, 2002</h4>
+                            <h4>Schedule Date: December 24, 2022</h4>
                             <div className="list-button" style={{display:'flex', justifyContent:'right'}}>
                             <Stack direction="row" spacing={2}>
-                            <Button variant="contained" style={{backgroundColor:'green', justifyContent: 'center', fontWeight:"750", width: "105px", height: "60px"}} onClick={goToUpdate}>Update</Button>
-                            <Button variant="contained" style={{backgroundColor:'red', justifyContent: 'center', fontWeight:"750", width: "105px", height: "60px"}} onClick={goToDelete}>Delete</Button>
+                            <Button variant="contained" style={{backgroundColor:'green', justifyContent: 'center', fontWeight:"750", width: "105px", height: "60px"}}>Update</Button>
+                            <Button variant="contained" style={{backgroundColor:'red', justifyContent: 'center', fontWeight:"750", width: "105px", height: "60px"}}>Delete</Button>
                             </Stack>
                             </div>
                         </article>
@@ -110,7 +108,7 @@ function ReadSchedule(){
                 </div>
             </div>
 
-          <Footer name="Johniel Comanda" course="BSCS" section="F2"/>
+          <Footer name="Johniel Comanda_Test" course="BSCS" section="F2"/>
         </div>
     )
 
